@@ -1,0 +1,44 @@
+.navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 10%;
+
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}

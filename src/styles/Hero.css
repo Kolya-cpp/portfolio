@@ -1,0 +1,80 @@
+/* Главный экран */
+.hero {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 0 10%;
+}
+
+/* Заголовок */
+.hero h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+/* Выделение имени */
+.hero h1 span {
+  color: #38bdf8;
+}
+
+/* Подзаголовок */
+.hero h2 {
+  font-size: 32px;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+/* Описание */
+.hero p {
+  max-width: 700px;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #cbd5e1;
+}
+
+/* Контейнер кнопок */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Все кнопки */
+.hero button {
+  padding: 15px 35px;
+  border: none;
+  border-radius: 10px;
+
+  background: #38bdf8;
+  color: white;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Эффект наведения */
+.hero button:hover {
+  transform: translateY(-3px);
+  background: #56c7ff;
+}
+
+/* Прозрачная кнопка */
+.outline {
+  background: transparent !important;
+  border: 2px solid #38bdf8 !important;
+  color: #38bdf8 !important;
+}
+
+/* Hover для прозрачной */
+.outline:hover {
+  background: #38bdf8 !important;
+  color: white !important;
+}
