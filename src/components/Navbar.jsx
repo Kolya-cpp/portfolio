@@ -5,7 +5,7 @@ function Navbar() {
         <header className="navbar">
 
             <a href="/" className="logo">
-            Mykola<span>.dev</span>
+            Kolya<span>.dev</span>
             </a>
 
             <nav className="nav-links">
