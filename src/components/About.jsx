@@ -16,7 +16,7 @@ function About() {
         <div className="about-text">
 
           <p>
-            Мене звати <strong>Коля</strong>.
+            Мене звати <strong>Микола</strong>.
             Я студент Київського фахового коледжу електронних приладів
             та майбутній Software Developer.
           </p>

@@ -21,10 +21,18 @@
 .logo {
     font-size: 28px;
     font-weight: 700;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
 }
 
 .logo span {
     color: #38bdf8;
+}
+
+.logo:hover {
+    opacity: 0.85;
 }
 
 .nav-links {

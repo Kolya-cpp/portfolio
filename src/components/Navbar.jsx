@@ -4,9 +4,9 @@ function Navbar() {
     return (
         <header className="navbar">
 
-            <div className="logo">
-                Kolya<span>.dev</span>
-            </div>
+            <a href="/" className="logo">
+            Mykola<span>.dev</span>
+            </a>
 
             <nav className="nav-links">
                 <a href="#about">Про мене</a>
@@ -17,6 +17,7 @@ function Navbar() {
 
         </header>
     );
+    <section className="skills" id="skills"></section>
 }
 
 export default Navbar;
