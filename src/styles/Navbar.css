@@ -50,3 +50,46 @@
 .nav-links a:hover {
     color: #38bdf8;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    padding: 4px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.language-switcher button {
+    padding: 7px 10px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: transparent;
+    color: #94a3b8;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.language-switcher button:hover {
+    color: white;
+}
+
+.language-switcher button.active {
+    background: #38bdf8;
+    color: #0f172a;
+}

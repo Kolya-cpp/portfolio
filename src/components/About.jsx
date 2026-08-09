@@ -1,42 +1,45 @@
 import "../styles/About.css";
 
+function About({ t, language }) {
+    return (
+        <section className="about" id="about">
 
-function About() {
-  return (
-    <section className="about" id="about">
+            <div className="about-heading">
+                <span className="section-label">
+                    {t.about.label}
+                </span>
 
-      <h2>Про мене</h2>
+                <h2>
+                    {t.about.title}
+                </h2>
+            </div>
 
-      <div className="about-content">
+            <div className="about-content">
 
-        <div className="about-image">
-          👨‍💻
-        </div>
+                <div className="about-image">
+                    👨‍💻
+                </div>
 
-        <div className="about-text">
+                <div className="about-text">
 
-          <p>
-            Мене звати <strong>Микола</strong>.
-            Я студент Київського фахового коледжу електронних приладів
-            та майбутній Software Developer.
-          </p>
+                    <p>
+                        {t.about.paragraph1}
+                    </p>
 
-          <p>
-            Найбільше мене цікавить розробка сучасних вебзастосунків,
-            програмного забезпечення та баз даних.
-          </p>
+                    <p>
+                        {t.about.paragraph2}
+                    </p>
 
-          <p>
-            Постійно вдосконалюю свої навички,
-            працюю над власними проєктами та вивчаю нові технології.
-          </p>
+                    <p>
+                        {t.about.paragraph3}
+                    </p>
 
-        </div>
+                </div>
 
-      </div>
+            </div>
 
-    </section>
-  );
+        </section>
+    );
 }
 
 export default About;

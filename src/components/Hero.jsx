@@ -1,25 +1,43 @@
 import "../styles/Hero.css";
 
-function Hero() {
-  return (
-    <section className="hero">
-      <h1>
-        Привіт, я <span>Микола</span> 👋
-      </h1>
+function Hero({ t, language }) {
+    return (
+        <section className="hero" id="home">
 
-      <h2>Майбутній Software Developer</h2>
+            <span className="section-label">
+                {t.hero.label}
+            </span>
 
-      <p>
-        Створюю сучасні веб-застосунки та програмне забезпечення.
-        Постійно навчаюсь, розвиваюсь та працюю над власними проєктами.
-      </p>
+            <h1>
+                {t.hero.title} <span>👋</span>
+            </h1>
 
-      <div className="hero-buttons">
-        <button>Мої проєкти</button>
-        <button className="outline">Зв'язатися</button>
-      </div>
-    </section>
-  );
+            <h2>
+                {t.hero.subtitle}
+            </h2>
+
+            <p>
+                {t.hero.description}
+            </p>
+
+            <div className="hero-buttons">
+                <a
+                    className="hero-button"
+                    href="#projects"
+                >
+                    {t.hero.projectsButton}
+                </a>
+
+                <a
+                    className="hero-button outline"
+                    href="#contact"
+                >
+                    {t.hero.contactButton}
+                </a>
+            </div>
+
+        </section>
+    );
 }
 
 export default Hero;
