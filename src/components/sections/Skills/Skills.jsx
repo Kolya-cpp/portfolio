@@ -1,4 +1,4 @@
-import "../styles/Skills.css";
+import "../../../styles/Skills.css";
 
 function Skills({ t, language }) {
     const skills = [

@@ -1,59 +1,63 @@
 .navbar {
     position: fixed;
+    top: 20px;
+    left: 50%;
+    z-index: 1000;
 
-    top: 0;
-    left: 0;
-
-    width: 100%;
+    width: min(1200px, calc(100% - 40px));
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
-    padding: 20px 10%;
+    padding: 14px 18px;
 
-    background: rgba(15, 23, 42, 0.8);
-    backdrop-filter: blur(12px);
+    background: rgba(11, 16, 32, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
 
-    z-index: 1000;
+    backdrop-filter: blur(18px);
+
+    transform: translateX(-50%);
 }
 
 .logo {
-    font-size: 28px;
-    font-weight: 700;
+    color: #ffffff;
     text-decoration: none;
-    color: white;
-    cursor: pointer;
-    transition: .3s;
+
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
 }
 
 .logo span {
-    color: #38bdf8;
-}
-
-.logo:hover {
-    opacity: 0.85;
+    color: #3db8f5;
 }
 
 .nav-links {
     display: flex;
-    gap: 35px;
+    align-items: center;
+    gap: 22px;
 }
 
 .nav-links a {
+    color: #aab4c8;
     text-decoration: none;
-    color: white;
 
-    transition: .3s;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
 }
 
 .nav-links a:hover {
-    color: #38bdf8;
+    color: #ffffff;
+    transform: translateY(-1px);
 }
 
-html {
-    scroll-behavior: smooth;
-}
+/* language switcher */
 
 .language-switcher {
     display: flex;
@@ -62,34 +66,135 @@ html {
 
     padding: 4px;
 
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 10px;
-
-    background: rgba(255, 255, 255, 0.04);
 }
 
 .language-switcher button {
-    padding: 7px 10px;
+    padding: 6px 8px;
+
+    color: #7f8ba3;
+    background: transparent;
 
     border: none;
     border-radius: 7px;
-
-    background: transparent;
-    color: #94a3b8;
 
     font-size: 12px;
     font-weight: 700;
 
     cursor: pointer;
 
-    transition: 0.25s ease;
-}
-
-.language-switcher button:hover {
-    color: white;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
 }
 
 .language-switcher button.active {
-    background: #38bdf8;
-    color: #0f172a;
+    color: #ffffff;
+    background: #1d293d;
+}
+
+.menu-toggle {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 18px;
+    height: 2px;
+
+    background: #ffffff;
+    border-radius: 999px;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 1050px) {
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        width: calc(100% - 24px);
+        top: 12px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+
+        padding: 12px;
+
+        background: rgba(11, 16, 32, 0.96);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+
+        backdrop-filter: blur(18px);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 12px;
+
+        border-radius: 10px;
+    }
+
+    .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .language-switcher {
+        justify-content: center;
+        margin-top: 6px;
+    }
 }
