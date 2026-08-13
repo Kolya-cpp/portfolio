@@ -98,7 +98,7 @@ export const translations = {
             workYear: "2024",
             workTitle: "Перша робота",
             workDescription:
-                "На другому курсі почав працювати в архіві ОксиБанку та отримав перший реальний досвід роботи.",
+                "Влітку 2024 року почав працювати в архіві ОксіБанку та отримав перший реальний досвід роботи.",
 
             nmtYear: "2025",
             nmtTitle: "Перший НМТ",
@@ -123,7 +123,7 @@ export const translations = {
             futureYear: "Next Step",
             futureTitle: "Наступний етап",
             futureDescription:
-                "Визначаюся з університетом та майбутньою спеціалізацією у Software Development і Cybersecurity.",
+                "Наступний крок — університет, поглиблення знань у Software Development та розвиток у напрямі Cybersecurity.",
         },
 
         contact: {
@@ -235,7 +235,7 @@ export const translations = {
             workYear: "2024",
             workTitle: "First Job",
             workDescription:
-                "Started working at the OksiBank archive during my second year of college and gained my first real work experience.",
+                "In the summer of 2024, I started working in the OxiBank archives and gained my first real-world work experience.",
 
             nmtYear: "2025",
             nmtTitle: "First NMT",
@@ -260,7 +260,7 @@ export const translations = {
             futureYear: "Next Step",
             futureTitle: "What's Next",
             futureDescription:
-                "Exploring university options and gradually defining my future specialization in Software Development and Cybersecurity.",
+                "The next step is college, where I plan to deepen my knowledge of software development and pursue a career in cybersecurity.",
         },
 
         contact: {

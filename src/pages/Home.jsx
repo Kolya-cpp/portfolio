@@ -36,7 +36,10 @@ function Home() {
 
                 <Skills t={t} />
 
-                <Projects t={t} />
+                <Projects
+                t={t}
+                language={language}
+                />
 
                 <Education t={t} />
 
