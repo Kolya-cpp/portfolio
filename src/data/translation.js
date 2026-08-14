@@ -4,6 +4,9 @@ export const translations = {
             about: "Про мене",
             skills: "Навички",
             projects: "Проєкти",
+            education: "Освіта",
+            journey: "Мій шлях",
+            beyondCode: "Поза програмуванням",
             contact: "Контакти",
         },
 
@@ -137,11 +140,21 @@ export const translations = {
         },
     },
 
+        projectDetails: {
+        notFound: "Проєкт не знайдено",
+        backToProjects: "До проєктів",
+        implemented: "Що реалізовано",
+        demo: "Демо",
+    },
+
     en: {
         nav: {
             about: "About me",
             skills: "Skills",
             projects: "Projects",
+            education: "Education",
+            journey: "My journey",
+            beyondCode: "Beyond Code",
             contact: "Contact",
         },
 
@@ -272,6 +285,12 @@ export const translations = {
             github: "GitHub",
             telegram: "Telegram",
         },
-        
+
+        projectDetails: {
+        notFound: "Project not found",
+        backToProjects: "Back to projects",
+        implemented: "What was implemented",
+        demo: "Live Demo",
+        },
     },
 };

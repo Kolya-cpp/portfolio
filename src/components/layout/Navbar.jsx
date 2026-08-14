@@ -17,33 +17,31 @@ function Navbar({ t, language, setLanguage }) {
 
             <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
                 <a href="/#about" onClick={closeMenu}>
-                    {language === "ua" ? "Про мене" : "About me"}
+                    {t.nav.about}
                 </a>
 
                 <a href="/#skills" onClick={closeMenu}>
-                    {language === "ua" ? "Навички" : "Skills"}
+                    {t.nav.skills}
                 </a>
 
                 <a href="/#projects" onClick={closeMenu}>
-                    {language === "ua" ? "Проєкти" : "Projects"}
+                    {t.nav.projects}
                 </a>
 
                 <a href="/#education" onClick={closeMenu}>
-                    {language === "ua" ? "Освіта" : "Education"}
+                    {t.nav.education}
                 </a>
 
                 <a href="/#journey" onClick={closeMenu}>
-                    {language === "ua" ? "Мій шлях" : "My journey"}
+                    {t.nav.journey}
                 </a>
 
                 <a href="/#beyond-code" onClick={closeMenu}>
-                    {language === "ua"
-                        ? "Поза програмуванням"
-                        : "Beyond Code"}
+                    {t.nav.beyondCode}
                 </a>
 
                 <a href="/#contact" onClick={closeMenu}>
-                    {language === "ua" ? "Контакти" : "Contact"}
+                    {t.nav.contact}
                 </a>
 
                 <LanguageSwitcher

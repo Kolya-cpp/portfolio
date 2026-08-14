@@ -27,9 +27,7 @@ function ProjectDetails() {
                 <main className="project-details">
                     <div className="project-details-container">
                         <h1>
-                            {language === "ua"
-                                ? "Проєкт не знайдено"
-                                : "Project not found"}
+                            {t.projectDetails.notFound}
                         </h1>
 
                         <Link
@@ -37,9 +35,7 @@ function ProjectDetails() {
                             className="project-back"
                         >
                             ←{" "}
-                            {language === "ua"
-                                ? "До проєктів"
-                                : "Back to projects"}
+                            {t.projectDetails.backToProjects}
                         </Link>
                     </div>
                 </main>
@@ -82,9 +78,7 @@ function ProjectDetails() {
                         className="project-back"
                     >
                         ←{" "}
-                        {language === "ua"
-                            ? "До проєктів"
-                            : "Back to projects"}
+                        {t.projectDetails.backToProjects}
                     </Link>
 
                     <span className="project-details-category">
@@ -109,9 +103,7 @@ function ProjectDetails() {
 
                             <section className="project-details-section">
                                 <h2>
-                                    {language === "ua"
-                                        ? "Що реалізовано"
-                                        : "What was implemented"}
+                                    {t.projectDetails.implemented}
                                 </h2>
 
                                 <ul className="project-details-features">
@@ -156,9 +148,7 @@ function ProjectDetails() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    {language === "ua"
-                                        ? "Демо"
-                                        : "Live Demo"}
+                                    {t.projectDetails.demo}
                                     <span>↗</span>
                                 </a>
                             )}

@@ -52,9 +52,9 @@
     overflow: hidden;
 
     transition:
-        transform 0.3s ease,
-        border-color 0.3s ease,
-        background 0.3s ease;
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        background 0.35s ease;
 }
 
 .project-card::before {
@@ -78,7 +78,7 @@
 }
 
 .project-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-6px);
     border-color: rgba(61, 184, 245, 0.35);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }
@@ -119,6 +119,10 @@
     font-size: 28px;
 }
 
+.project-card h3 a {
+    color: #3db8f5;
+    transition: 0.3s ease;
+}
 .project-card p {
     margin: 0;
 
@@ -151,6 +155,16 @@
     background: rgba(255, 255, 255, 0.03);
 
     opacity: 0.75;
+
+    transition: 0.3s ease;
+    background: 0.3s ease;
+    opacity: 0.3s ease;
+}
+
+.project-card:hover .project-technologies span {
+    border-color: rgba(61, 184, 245, 0.25);
+    background: rgba(64, 184, 245, 0.05);
+    opacity: 1;
 }
 
 .project-link {

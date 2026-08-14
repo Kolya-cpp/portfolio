@@ -1,6 +1,6 @@
 import "../../../styles/About.css";
 
-function About({ t, language }) {
+function About({ t }) {
     return (
         <section className="about" id="about">
 

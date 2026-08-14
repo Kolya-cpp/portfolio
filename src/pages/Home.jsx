@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { translations } from "../data/translation";
+import { useEffect } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 import Navbar from "../components/layout/Navbar";
 import Hero from "../components/sections/Hero/Hero";
@@ -14,9 +14,7 @@ import Footer from "../components/layout/Footer";
 
 
 function Home() {
-    const [language, setLanguage] = useState("ua");
-
-    const t = translations[language];
+    const { language, setLanguage, t } = useLanguage();
 
     useEffect(() => {
     if (window.location.hash === "#projects") {
@@ -43,10 +41,7 @@ function Home() {
             />
 
             <main>
-                <Hero
-                    t={t}
-                    language={language}
-                />
+                <Hero t={t} />
 
                 <About t={t} />
 

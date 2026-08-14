@@ -1,6 +1,6 @@
 import "../../../styles/Skills.css";
 
-function Skills({ t, language }) {
+function Skills({ t }) {
     const skills = [
         {
             title: "Frontend",

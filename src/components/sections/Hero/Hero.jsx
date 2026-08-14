@@ -1,6 +1,6 @@
 import "../../../styles/Hero.css";
 
-function Hero({ t, language }) {
+function Hero({ t }) {
     return (
         <section className="hero" id="home">
 
