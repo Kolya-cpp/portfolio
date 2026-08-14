@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { translations } from "../data/translation";
 
 import Navbar from "../components/layout/Navbar";
@@ -17,6 +17,22 @@ function Home() {
     const [language, setLanguage] = useState("ua");
 
     const t = translations[language];
+
+    useEffect(() => {
+    if (window.location.hash === "#projects") {
+        setTimeout(() => {
+            const projectsSection =
+                document.getElementById("projects");
+
+            if (projectsSection) {
+                projectsSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
+        }, 100);
+    }
+}, []);
 
     return (
         <>
